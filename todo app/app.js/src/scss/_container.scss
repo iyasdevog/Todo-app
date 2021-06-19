@@ -1,0 +1,77 @@
+$shadow: 0rem 1rem 0.5rem rgba(#000, 0.6);
+.container {
+  background-color: rgb(47, 2, 129);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+
+  height: 100vh;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.inputBox {
+  background-color: #fff;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  width: 18rem;
+  box-shadow: $shadow;
+  display: flex;
+  justify-content: space-between;
+}
+.counter {
+  border: none;
+  width: 2rem;
+  margin-right: 0.5rem;
+  &:focus {
+    outline: none;
+  }
+}
+.form {
+  border: none;
+  width: 15rem;
+  color: #000;
+  &:focus {
+    outline: none;
+  }
+}
+.displayBox {
+  background-color: rgba(0, 0, 0, 0.541);
+  color: #fff;
+  width: 18rem;
+  box-shadow: $shadow;
+
+  padding: 0.7rem;
+  display: grid;
+  grid-template-columns: 1fr min-content min-content;
+  grid-template-rows: 1fr min-content;
+  gap: 1rem;
+}
+.display {
+  justify-self: start;
+}
+.edit {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.dlt-btn {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.dateNow {
+  font-size: 0.8rem;
+}
+.timer-box {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// .timer {
+//   background-color: #fff;
+//   color: #000;
+//   padding: 0.3rem;
+// }
